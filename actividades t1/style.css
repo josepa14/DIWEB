@@ -1,0 +1,42 @@
+
+th{
+    padding: 5px;
+}
+
+.lrg{
+    font-size: 22px;
+    color: red;
+}
+
+.mrtg{
+    margin-top: 40px;  
+}
+.mrtm{
+    margin-top: 20px;
+}
+.mrg{
+    margin-left: 60px;
+}
+
+
+.pt{
+    padding-top: 8px;
+}
+.pb{
+    padding-bottom: 8px;
+}
+
+.pl{
+    padding-left: 15px;
+}
+.pr{
+    padding-right: 10px;
+}
+
+
+
+.bordes{
+    border: 1px solid blue;
+}
+.fondo{
+    background-color: coral;}
