@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+</head>
+
+<body>
+    <style>
+        .contenedor {
+            display: grid;
+            grid-template-areas:
+              "cabecera cabecera cabecera"
+              "li1  centro centro"
+              "li2  cuerpo ld2"
+              "li3  cuerpo ld3"
+        } 
+        .cabecera {
+            grid-area: cabecera;
+        } 
+
+        .cuerpo {
+            grid-area: cuerpo;
+        } 
+        .centro {
+            grid-area: centro;
+        } 
+        .li1 {
+            grid-area: li1;
+        } 
+
+        .li2{
+            grid-area: li2;
+        } 
+
+        .li3 {
+            grid-area: li3;
+        } 
+        .ld2 {
+            grid-area: ld2;
+        }
+        .ld3 {
+            grid-area: ld3;
+        }
+     </style>        
+    <div class="contenedor">
+        <div class="cabecera">Imagen 1</div>
+        <div class="li1">Imagen 2</div>
+        <div class="centro">Imagen 3</div>
+        <div class="li2">Imagen 2</div>
+        <div class="li3">Imagen 2</div>
+        <div class="cuerpo">Imagen 5</div>
+        <div class="ld2">Imagen 2</div>
+        <div class="ld3">Imagen 2</div>
+    </div>
+</body>
+</html>
