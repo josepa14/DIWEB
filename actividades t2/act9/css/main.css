@@ -1,0 +1,24 @@
+.c-panel {
+  width: 50%;
+  font-size: 20px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.c-panel--peligro {
+  border-color: red;
+}
+.c-panel__cabecera {
+  padding: 10px;
+  color: #333;
+  background-color: #8d8d8d;
+  border-color: #ddd;
+}
+.c-panel__cabecera--peligro {
+  background-color: red;
+  color: white;
+}
+
+.c-panel__body {
+  padding: 10px;
+}/*# sourceMappingURL=main.css.map */

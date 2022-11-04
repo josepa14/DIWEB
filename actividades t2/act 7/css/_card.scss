@@ -1,0 +1,21 @@
+.c-card{
+    
+    width: 20%;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: 1px solid;
+    border-color: rgb(223, 215, 215);
+}
+.c-card--centrado{
+    margin-left: 40%;
+}
+
+.c-card__title{
+    font-size: 1.25rem;
+}
+.c-card__body{
+    
+    padding-right: 0.5em;
+    padding-bottom: 2em;
+    padding-left: 0.5em;
+}

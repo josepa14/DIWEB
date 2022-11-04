@@ -1,0 +1,35 @@
+.c-boton{
+    padding-top: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 16px;
+    background-color: rgb(55, 110, 230);
+    border-radius: 5px;
+    border-color: rgb(55, 110, 230);
+    color: white;
+    padding-bottom: 6px;
+}
+.c-boton--secundario{
+    background-color: white;
+    border-color: rgb(55, 110, 230);
+    color: rgb(55, 110, 230);
+    padding-bottom: 6px;
+}
+.c-boton--size-lg{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+.g--padding-horizontal-8{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.g--padding-vertical-5{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.-g--font-size-5{
+    font-size: 20px;
+}

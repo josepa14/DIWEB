@@ -1,0 +1,55 @@
+.c-card {
+  width: 20%;
+  text-align: center;
+  border-radius: 0.5rem;
+  border: 1px solid;
+  border-color: rgb(223, 215, 215);
+}
+
+.c-card--centrado {
+  margin-left: 40%;
+}
+
+.c-card__title {
+  font-size: 1.25rem;
+}
+
+.c-card__body {
+  padding-right: 0.5em;
+  padding-bottom: 2em;
+  padding-left: 0.5em;
+}
+
+.c-card__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+.c-boton {
+  box-shadow: inset 0px 1px 0px 0px #54a3f7;
+  background: linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+  background-color: #007dc1;
+  border-radius: 3px;
+  border: 1px solid #124d77;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 13px;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #154682;
+}
+
+.c-boton:hover {
+  background: linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+  background-color: #0061a7;
+}
+
+.cboton:active {
+  position: relative;
+  top: 1px;
+}
+
+/*# sourceMappingURL=main.css.map */

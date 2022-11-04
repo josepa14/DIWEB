@@ -1,0 +1,29 @@
+.caja{
+   
+    text-align: center;
+    padding: 10px
+    ;
+}
+.caja__hija{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 0.5em;
+}
+.t1{
+    box-shadow: 0 1px 3px  hsla(0, 0%,2% ,2);
+}
+.t2{
+    box-shadow: 0 4px 6px lightblue;
+}
+.t3{
+    box-shadow: 0 5px 15px lightblue;
+}
+.t4{
+    box-shadow: 0px 10px 24px lightblue;
+}
+.t5{
+    box-shadow: 0px 15px 35px lightblue;
+}

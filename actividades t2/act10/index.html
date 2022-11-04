@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Los botones tienen propiedades primarias y secundarias y propiedades de logintud-->
+    <button type="button" class="c-btn c-btn--primary c-btn--primary c-btn--lg">Large button</button>
+<button type="button" class="c-btn c-btn--secondary c-btn--lg">Large button</button>
+
+<div class="c-alert c-alert--primary" role="alert">
+  A simple primary alert—check it out!
+</div>
+
+<div class="c-alert c-alert--primary" role="alert">
+  A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
+
+<div class="c-alert c-alert--success" >
+  <h4 class="c-alert__heading">Well done!</h4>
+  <p>Hola</p>
+  <hr>
+  <p class="g--mb-0">Hola</p>
+</div>
+<!--Modifico una clase llamada bg para llamarla de nuevo badge y le agrego la propiedad secondary lo mismo con el elemento text que venia concatenada a la clase bg-secondary-->
+<h1>Example heading <span class="c-badge c-badge--secondary">New</span></h1>
+<button type="button" class="c-btn c-btn--primary">
+  Notifications <span class="c-badge c-badge__text c-badge--secondary">4</span>
+</button>
+<!-- En la seccion buton la propiedad relative solo esta escrito para ella-->
+<button type="button" class="c-btn c-btn--primary c-btn--position-relative">
+<!--Aqui span deberia tener su clase propia roundedpill es propiedad de badge que es para redondear -->
+  <span class="g--position-absolute g--top-0 g--start-100 g--translate-middle c-badge--rounded-pill c-badge--danger">
+   
+    <span class="g--visually-hidden">unread messages</span>
+  </span>
+</button>
+
+<span class="c-badge c-badge--rounded-pill text-bg-primary">Primary</span>
+<span class="c-badge c-badge--rounded-pill text-bg-secondary">Secondary</span>
+<!--La propiedad active es unica y como tal es de breadcump, los __items son elementos-->
+<ol class="c-breadcrumb">
+  <li class="c-breadcrumb__item"><a href="#">Home</a></li>
+  <li class="c-breadcrumb__item"><a href="#">Library</a></li>
+  <li class="c-breadcrumb__item c-breadcrumb--active" aria-current="page">Data</li>
+</ol>
+
+<div class="c-card" style="width: 18rem;">
+  <img src="" class="card__img-top" >
+  <div class="card__body">
+    <h5 class="card__title">Card title</h5>
+    <p class="card__text">Hola</p>
+    <a href="#" class="c-btn c-btn--primary">OK</a>
+  </div>
+</div>
+<!-- nuevos bloques y nuevos elementos-->
+<div class="c-progress">
+  <div class="c-progress__bar c-progress--info"  style="width: 50%" ></div>
+</div>
+<div class="c-progress">
+  <div class="c-progress-bar  c-progress--warning"  style="width: 75%" ></div>
+</div>
+<!-- arriba le definen estilo with 75% y aqui se lo agrego como propiedad global-->
+<div class="c-progress">
+  <div class="c-progress__bar g--w-75"  ></div>
+</div>
+
+<div class="c-progress">
+  <div class="c-progress__bar c-progress__bar--striped c-progress--success"  style="width: 25%" ></div>
+</div>
+<!-- a los page items le agrego el nombre del bloque padre c-pagination y lo mismo con page-link-->
+<ul class="c-pagination">
+  <li class="c-pagination__page-item"><a class="c-pagination__page-link" href="#">Previous</a></li>
+  <li class="c-pagination__page-item"><a class="c-pagination__page-link" href="#">1</a></li>
+  <li class="pc-pagination__page-item"><a class="c-pagination__page-link" href="#">2</a></li>
+  <li class="c-pagination__page-item"><a class="c-pagination__page-link" href="#">3</a></li>
+  <li class="c-pagination__page-item"><a class="c-pagination__page-link" href="#">Next</a></li>
+</ul>
+<!-- hay una propiedad llamada active y  disabled he optado por ponerla como propiedad de pagination-->
+<ul class="c--pagination">
+  <li class="c-pagination__page-item c-pagination--disabled">
+    <a class="c-pagination__page-link">Previous</a>
+  </li>
+  <li class="c-pagination__page-item"><a class="c-pagination__page-link" href="#">1</a></li>
+  <li class="c-pagination__page-item c-pagination--active" aria-current="page">
+    <a class="c-pagination__page-link" href="#">2</a>
+  </li>
+  <li class="c-pagination__page-item"><a class="page-link" href="#">3</a></li>
+  <li class="c-pagination__page-item">
+    <a class="c-pagination__page-link" href="#">Next</a>
+  </li>
+</ul>
+<!--propiedad lg de pagination -->
+<ul class="c_pagination c-pagination--lg">
+  <li class="c-pagination__page-item active" aria-current="page">
+    <span class="c-pagination__page-link">1</span>
+  </li>
+  <li class="c-pagination__page-item"><a class="c-pagination__page-link" href="#">2</a></li>
+  <li class="c-pagination__page-item"><a class="c-pagination__page-link" href="#">3</a></li>
+</ul> 
+
+</body>
+</html>
+

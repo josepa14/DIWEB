@@ -1,0 +1,29 @@
+$tamaño-10: 10px;
+
+.c-panel{
+    width: 50%;
+    font-size: 20px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+  
+    &--peligro{
+        border-color: red;
+    }
+
+    &__cabecera{
+        padding: $tamaño-10;
+        color: #333;
+        background-color: #8d8d8d;
+        border-color: #ddd;
+        
+        &--peligro{
+            background-color: red;
+            color: white;
+        }
+    }
+}
+.c-panel__body {
+
+    padding: $tamaño-10;
+}
