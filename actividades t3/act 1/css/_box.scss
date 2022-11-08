@@ -1,0 +1,28 @@
+.caja {
+
+  text-align: center;
+  padding: 10px;
+}
+
+.caja__hija {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 0.5em;
+
+
+
+}
+
+@mixin shadow($profundidad) {
+  box-shadow: 0 1px #{$profundidad}px red;
+}
+
+
+@for $i from 0 to 5 {
+  .g--shadow-#{$i} {
+    @include shadow(15);
+  }
+}

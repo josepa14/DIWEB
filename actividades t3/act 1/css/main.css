@@ -1,0 +1,33 @@
+.caja {
+  text-align: center;
+  padding: 10px;
+}
+
+.caja__hija {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 0.5em;
+}
+
+.g--shadow-0 {
+  box-shadow: 0 1px 15px red;
+}
+
+.g--shadow-1 {
+  box-shadow: 0 1px 15px red;
+}
+
+.g--shadow-2 {
+  box-shadow: 0 1px 15px red;
+}
+
+.g--shadow-3 {
+  box-shadow: 0 1px 15px red;
+}
+
+.g--shadow-4 {
+  box-shadow: 0 1px 15px red;
+}/*# sourceMappingURL=main.css.map */
