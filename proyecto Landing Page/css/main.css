@@ -1,18 +1,87 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+}
+
 html,
 body {
-  background-color: aliceblue;
-  height: 100%;
+  width: 100%;
+  font: 25px sans-serif;
+  font-family: Verdana;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(circle, rgba(2, 0, 36, 0) 0%, rgba(252, 149, 2, 0.7595413165) 0%, rgb(246, 246, 246) 98%);
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: bold;
 }
 
 .c-padre {
   height: 100%;
-  width: 100;
   background-color: white;
   border-radius: 0.75em;
   margin: 4%;
   box-shadow: 0 10px 28px rgb(241, 125, 16);
   display: grid;
-  text-align: center;
   grid-template-areas: "menu menu menu menu" "card card card card" "card card card card" "card card card card" "card card card card" "des des leng leng" "des des leng leng" "des des leng leng";
 }
 
@@ -27,24 +96,68 @@ body {
 
 .c-padre__card {
   grid-area: card;
-  background-color: blue;
+  box-shadow: 0 3px 5px rgb(241, 125, 16);
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 0.5em;
+  display: grid;
+  grid-template-areas: " izquierda  derecha ";
+  box-sizing: border-box;
+}
+.c-padre__card__imagen {
+  width: 100%;
+  height: 100%;
+  grid-area: izquierda;
+  border-radius: 0.5em;
+  box-sizing: border-box;
+}
+.c-padre__card__presentacion {
+  width: 100%;
+  height: 100%;
+  grid-area: derecha;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+.c-padre__card__presentacion p {
+  color: gray;
 }
 
 .c-padre__descripcion {
   grid-area: des;
-  width: 100%;
-  background-color: blueviolet;
+  box-shadow: 0 3px 5px rgb(241, 125, 16);
+  border-radius: 0.5em;
+  box-sizing: border-box;
+  margin-left: 10%;
+  margin-right: 5%;
+}
+.c-padre__descripcion ul li {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 4px;
+  padding: 6px;
+  border-radius: 0.5em;
+  font-size: 12px;
+  font-weight: bold;
+}
+.c-padre__descripcion ul li:hover {
+  background-color: orange;
 }
 
 .c-padre__lenguajes {
-  display: flexbox;
   grid-area: leng;
   width: 100%;
-  background-color: aquamarine;
+  box-shadow: 0 3px 5px rgb(241, 125, 16);
+  box-sizing: border-box;
+  border-radius: 0.5em;
+}
+.c-padre__lenguajes p img {
+  width: 5%;
+  height: 5%;
 }
 
 .c-padre__menu__a {
+  color: black;
   font-weight: bold;
+  font-size: 20px;
 }
 
 .g--derecha {
@@ -53,7 +166,6 @@ body {
 }
 
 .g--derecha a {
-  font-size: 20px;
   padding: 14px 16px;
 }
 
@@ -63,7 +175,6 @@ body {
 }
 
 .g--izquierda {
-  text-align: left;
   grid-area: izquierda;
 }
 
@@ -71,4 +182,189 @@ body {
   border: 1px solid orange;
   background-color: rgba(255, 166, 0, 0.459);
   border-radius: 10px;
+}
+
+.c-imagen {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 0.5em;
+}
+
+.g--margin-bottom-5 {
+  margin-bottom: 5%;
+}
+
+.g--margin-bottom-10 {
+  margin-bottom: 5%;
+}
+
+.g--margin-bottom-15 {
+  margin-bottom: 15%;
+}
+
+.g--margin-right-5 {
+  margin-bottom: 5%;
+}
+
+.g--margin-right-10 {
+  margin-bottom: 5%;
+}
+
+.g--margin-right-15 {
+  margin-bottom: 15%;
+}
+
+.g--margin-left-15 {
+  margin-left: 15%;
+}
+
+.g--padding-right-2 {
+  padding-right: 2%;
+}
+
+.g--padding-right-5 {
+  padding-right: 5%;
+}
+
+.g--padding-right-8 {
+  padding-right: 8%;
+}
+
+.g--padding-bottom-2 {
+  padding-bottom: 2%;
+}
+
+.g--padding-bottom-5 {
+  padding-bottom: 2%;
+}
+
+.g--padding-bottom-8 {
+  padding-bottom: 2%;
+}
+
+.g--padding-left-2 {
+  padding-left: 2%;
+}
+
+.g--padding-left-5 {
+  padding-left: 5%;
+}
+
+.g--padding-left-8 {
+  padding-left: 8%;
+}
+
+.g--textCenter {
+  text-align: center;
+}
+
+.g--textRight {
+  text-align: right;
+}
+
+.g--textLeft {
+  text-align: left;
+}
+
+.g--obligatorio {
+  color: red;
+}
+
+.c-form {
+  width: 50%;
+  border-radius: 10px;
+  padding: 5%;
+  background-color: #fbfbfb;
+}
+.c-form p {
+  font-size: 14px;
+  color: #0e0e0e;
+}
+
+input {
+  background-color: #fbfbfb;
+  width: 90%;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: orange;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  background-color: #fbfbfb;
+  width: 90%;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: orange;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+label {
+  display: block;
+  float: center;
+}
+
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: orange;
+  border-color: orange;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
+
+button p {
+  color: #fff;
+}
+
+.c-padre__aviso {
+  font-size: 13px;
+  color: #0e0e0e;
+}
+
+.c-form__h1 {
+  font-size: 39px;
+  text-align: letf;
+  padding-bottom: 20px;
+  color: orange;
+}
+
+.c-form__h3 {
+  font-size: 18px;
+  padding-bottom: 5%;
+  color: #0e0e0e;
+}
+
+::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+
+::-webkit-textarea-placeholder {
+  color: #a8a8a8;
+}
+
+.c-form__campos input:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+
+.c-form__campos textarea:focus {
+  outline: 0;
+  border: 1px solid #97d848;
 }/*# sourceMappingURL=main.css.map */

@@ -1,19 +1,34 @@
+$t100: 100%;
+$t50: 50%;
+
+
 html,
 body {
-    background-color: aliceblue;
-    height: 100%;
+    width: $t100;
+    font: 25px sans-serif;
+    font-family: Verdana;
+    background: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 0) 0%,
+            rgba(252, 149, 2, 0.7595413165266106) 0%, rgba(246, 246, 246, 1) 98%);
 
+}
+h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+h2{
+    font-size: 35px;
+    font-weight: bold;
 }
 
 .c-padre {
-    height: 100%;
-    width: 100;
+    height: $t100;
     background-color: white;
     border-radius: 0.75em;
     margin: 4%;
     box-shadow: 0 10px 28px rgb(241, 125, 16);
     display: grid;
-    text-align: center;
+    // text-align: center;
     grid-template-areas:
         "menu menu menu menu"
         "card card card card"
@@ -39,43 +54,98 @@ body {
 
 .c-padre__card {
     grid-area: card;
-    background-color: blue;
+    box-shadow: 0 3px 5px rgb(241, 125, 16);
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 0.5em;
+    display: grid;
+    grid-template-areas:
+        " izquierda  derecha ";
+    box-sizing: border-box;
 
+    &__imagen {
+        width: 100%;
+        height: 100%;
+        grid-area: izquierda;
+        border-radius: 0.5em;
+        box-sizing: border-box;
+    
+    }
+
+    &__presentacion {
+        width: 100%;
+        height: 100%;
+        grid-area: derecha;
+       box-sizing: border-box;
+       padding-left: 10px;  
+        & p{
+            color: gray;
+        }
+    }
 }
+
+
 
 .c-padre__descripcion {
     grid-area: des;
-    width: 100%;
-    background-color: blueviolet;
+    box-shadow: 0 3px 5px rgb(241, 125, 16);
+    border-radius: 0.5em;
+    box-sizing: border-box;
+    margin-left: 10%;
+    margin-right: 5%;
+
+
+    & ul li{
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        margin: 4px;
+        padding: 6px;
+        border-radius: 0.5em;
+       font-size: 12px;
+       font-weight: bold;
+    }
+    & ul li:hover{
+        background-color: orange;
+    }
 }
 
 .c-padre__lenguajes {
-    display: flexbox;
-   grid-area: leng;
-   width: 100%;
-   background-color: aquamarine;
+    grid-area: leng;
+    width: 100%;
+    box-shadow: 0 3px 5px rgb(241, 125, 16);
+    box-sizing: border-box;
+    border-radius: 0.5em;
+
+    & p img{
+        width: 5%;
+        height: 5%;
+    }
 }
 
 .c-padre__menu__a {
+    color: black;
     font-weight: bold;
+    font-size: 20px;
 }
-.g--derecha{
+
+.g--derecha {
     grid-area: derecha;
     text-align: right;
 }
+
 .g--derecha a {
-    font-size: 20px;
     padding: 14px 16px;
 }
-.g--derecha a:hover{
+
+.g--derecha a:hover {
     background-color: orange;
     border-radius: 10px;
 }
-.g--izquierda{
-    text-align: left;
+
+.g--izquierda {
     grid-area: izquierda;
 }
-.g--activo{
+
+.g--activo {
     border: 1px solid orange;
     background-color: rgba(255, 166, 0, 0.459);
     border-radius: 10px;
