@@ -1,0 +1,82 @@
+html,
+body {
+    background-color: aliceblue;
+    height: 100%;
+
+}
+
+.c-padre {
+    height: 100%;
+    width: 100;
+    background-color: white;
+    border-radius: 0.75em;
+    margin: 4%;
+    box-shadow: 0 10px 28px rgb(241, 125, 16);
+    display: grid;
+    text-align: center;
+    grid-template-areas:
+        "menu menu menu menu"
+        "card card card card"
+        "card card card card"
+        "card card card card"
+        "card card card card"
+        "des des leng leng"
+        "des des leng leng"
+        "des des leng leng";
+}
+
+.c-padre__menu {
+    padding: 3%;
+    grid-area: menu;
+    //background-color: aqua;
+    border-radius: 0.75em;
+    align-items: center;
+    display: grid;
+    grid-template-areas:
+        "izquierda derecha";
+
+}
+
+.c-padre__card {
+    grid-area: card;
+    background-color: blue;
+
+}
+
+.c-padre__descripcion {
+    grid-area: des;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+.c-padre__lenguajes {
+    display: flexbox;
+   grid-area: leng;
+   width: 100%;
+   background-color: aquamarine;
+}
+
+.c-padre__menu__a {
+    font-weight: bold;
+}
+.g--derecha{
+    grid-area: derecha;
+    text-align: right;
+}
+.g--derecha a {
+    font-size: 20px;
+    padding: 14px 16px;
+}
+.g--derecha a:hover{
+    background-color: orange;
+    border-radius: 10px;
+}
+.g--izquierda{
+    text-align: left;
+    grid-area: izquierda;
+}
+.g--activo{
+    border: 1px solid orange;
+    background-color: rgba(255, 166, 0, 0.459);
+    border-radius: 10px;
+}
