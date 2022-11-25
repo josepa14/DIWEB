@@ -53,16 +53,33 @@
     padding-left: 8%;
 }
 //texto alineado
+
+@mixin alineado($posicion){
+    text-align: $posicion;
+}
+
+
 .g--textCenter{
-    text-align: center;
+    @include alineado(center);
 }
 .g--textRight{
-    text-align: right;
+    @include alineado(right);
 }
 .g--textLeft{
-    text-align: left;
+    @include alineado(left);
 }
 
 .g--obligatorio{
     color: red; 
+  }
+
+
+
+ 
+  @for $i from 0 to 16 {
+    .g--margin-bottom-#{$i}{
+       
+    }
+ 
+    
   }
