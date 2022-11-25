@@ -53,14 +53,18 @@
     padding-left: 8%;
 }
 //texto alineado
+
+ @mixin align($position){
+    text-align: $position;
+ }
 .g--textCenter{
-    text-align: center;
+    @include align(center)
 }
 .g--textRight{
-    text-align: right;
+   @include align(right)
 }
 .g--textLeft{
-    text-align: left;
+   @include align(left)
 }
 
 .g--obligatorio{
