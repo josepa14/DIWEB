@@ -1,8 +1,6 @@
 meter {
     
-    --optimum: forestgreen;
+    --optimum: gold;
     --sub-optimum: forestgreen;
     --sub-sub-optimum: crimson;
-  
-    /* The gray background in Firefox */
   }

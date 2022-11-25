@@ -17,12 +17,18 @@
 }
 
 @mixin shadow($profundidad) {
-  box-shadow: 0 1px #{$profundidad}px red;
+  box-shadow: $profundidad;
 }
-
+$mapa:(
+    0: 0 1px 3px red,
+    1: 0 4px 6px red,
+    2: 0 5px 15px red,
+    3: 0 10px 24px red,
+    4: 0 15px 35px red,
+);
 
 @for $i from 0 to 5 {
   .g--shadow-#{$i} {
-    @include shadow(15);
+    @include shadow(map-get($mapa,$i));
   }
 }
