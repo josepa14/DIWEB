@@ -73,14 +73,20 @@ h6 {
   grid-gap: 20px;
   grid-auto-flow: dense;
 }
-.item6{
-  grid-column: span 6;
 
-}
-.item8{
-  grid-column: 7/9;
-  grid-row: 1;
-}
 .item:nth-child(6n){
   background-color: aqua;
+  grid-column: span 6;
+}
+.item:nth-child(8n){
+  background-color: red;
+  grid-column: span 2;
+}
+.item:nth-child(9n){
+  background-color: #98fd18;
+  grid-row: span 2;
+}
+.item:nth-child(18){
+  background-color: #63a70a;
+grid-column: 5/11;
 }

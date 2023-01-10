@@ -1,0 +1,147 @@
+.g--width-1 {
+  width: 100px;
+}
+
+.g--min-width-1 {
+  min-width: 100px;
+}
+
+.g--max-width-1 {
+  max-width: 100px;
+}
+
+.g--width-2 {
+  width: 150px;
+}
+
+.g--min-width-2 {
+  min-width: 150px;
+}
+
+.g--max-width-2 {
+  max-width: 150px;
+}
+
+.g--width-3 {
+  width: 200px;
+}
+
+.g--min-width-3 {
+  min-width: 200px;
+}
+
+.g--max-width-3 {
+  max-width: 200px;
+}
+
+.g--width-4 {
+  width: 250px;
+}
+
+.g--min-width-4 {
+  min-width: 250px;
+}
+
+.g--max-width-4 {
+  max-width: 250px;
+}
+
+.g--width-5 {
+  width: 300px;
+}
+
+.g--min-width-5 {
+  min-width: 300px;
+}
+
+.g--max-width-5 {
+  max-width: 300px;
+}
+
+.g--width-6 {
+  width: 350px;
+}
+
+.g--min-width-6 {
+  min-width: 350px;
+}
+
+.g--max-width-6 {
+  max-width: 350px;
+}
+
+.g--width-7 {
+  width: 400px;
+}
+
+.g--min-width-7 {
+  min-width: 400px;
+}
+
+.g--max-width-7 {
+  max-width: 400px;
+}
+
+.g--width-8 {
+  width: 450px;
+}
+
+.g--min-width-8 {
+  min-width: 450px;
+}
+
+.g--max-width-8 {
+  max-width: 450px;
+}
+
+.g--width-9 {
+  width: 500px;
+}
+
+.g--min-width-9 {
+  min-width: 500px;
+}
+
+.g--max-width-9 {
+  max-width: 500px;
+}
+
+.g--width-10 {
+  width: 550px;
+}
+
+.g--min-width-10 {
+  min-width: 550px;
+}
+
+.g--max-width-10 {
+  max-width: 550px;
+}
+
+.g--width-11 {
+  width: 600px;
+}
+
+.g--min-width-11 {
+  min-width: 600px;
+}
+
+.g--max-width-11 {
+  max-width: 600px;
+}
+
+.g--overflow-auto {
+  overflow: auto;
+}
+
+.c-tabla__bordes {
+  border: 2px solid black;
+}
+
+.c-tabla__sombras {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+thead {
+  background-color: aqua;
+}/*# sourceMappingURL=main.css.map */
