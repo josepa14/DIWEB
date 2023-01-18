@@ -1,0 +1,21 @@
+.verde{
+    background-color: greenyellow;
+}
+.rojo{
+    background-color: red;
+}
+.rosa{
+    background-color: rgb(250, 129, 250);
+}
+.naranja{
+    background-color: orange;
+}
+.azul{
+    background-color: blue;
+}
+.bordes-1{
+    border: 1px solid black;
+}
+.bordes-2{
+    border: 2px solid black;
+}
