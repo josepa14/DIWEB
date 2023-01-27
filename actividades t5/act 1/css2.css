@@ -1,0 +1,30 @@
+ .uno {
+     background-color: red;
+     width: min(100px, 10vw);
+     height: min(100px, 10vw);
+
+
+ }
+
+ .dos {
+     background-color: green;
+     width: max(800px, 10vw);
+     height: max(800px, 10vw);
+
+ }
+
+ .tres {
+     background-color: blue;
+     width: clamp(100px, 400px, 800px);
+     height: clamp(100px, 400px, 800px);
+ }
+ .cuatro {
+    background-color: pink;
+    width: calc(50vw + 20px);
+    height: calc(50vw + 20px);
+}
+.cinco {
+    background-color: yellow;
+    width: clamp(100px, calc(50vw + 20px),800px);
+    height: clamp(100px, calc(50vw + 20px),800px);
+}

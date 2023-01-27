@@ -1,0 +1,38 @@
+.verde{
+    background-color: greenyellow;
+}
+.rojo{
+    background-color: red;
+}
+.rosa{
+    background-color: rgb(250, 129, 250);
+}
+.naranja{
+    background-color: orange;
+}
+.azul{
+    background-color: blue;
+}
+.bordes-1{
+    border: 1px solid white;
+}
+.bordes-2{
+    border: 2px solid white;
+}
+
+.height-1{
+    height: 25px;
+}
+.height-2{
+    height: 50px;
+}
+.height-6{
+    height: 150px;
+}
+
+.pantalla{
+    width: 600px;
+}
+
+
+

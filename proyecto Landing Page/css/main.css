@@ -82,7 +82,7 @@ h2 {
   margin: 4%;
   box-shadow: 0 10px 28px rgb(241, 125, 16);
   display: grid;
-  grid-template-areas: "menu menu menu menu" "card card card card" "card card card card" "card card card card" "card card card card" "des des leng leng" "des des leng leng" "des des leng leng";
+  grid-template-areas: "menu menu menu menu" "card card card card" "des des leng leng";
 }
 
 .c-padre__menu {

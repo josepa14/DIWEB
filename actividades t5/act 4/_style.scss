@@ -1,0 +1,18 @@
+
+$valor:100;
+@for $i from 1 to 12 {
+
+ .g--width-#{$i} {
+    width: #{$valor}px;
+  }
+  .g--min-width-#{$i} {
+    min-width: #{$valor}px;
+  }
+  .g--max-width-#{$i} {
+    max-width: #{$valor}px;
+  }
+  $valor:$valor+50;
+}
+.g--overflow-auto{
+    overflow: auto;
+}

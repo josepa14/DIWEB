@@ -1,0 +1,34 @@
+@for $i from 1 to 41 {
+
+    .g--font-size-#{$i} {
+        font-size: #{$i}px;
+    }
+  }
+.g-ff{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.g-ff-verdana{
+    font-family: Verdana;
+}
+.g-ff-Tahoma{
+    font-family: Tahoma;
+}
+.g-f-sansserif{
+    font-family: sans-serif;
+}
+.g-f-bold{
+    font-weight: bold;
+}
+.g-f-normal{
+    font-weight: normal;
+}
+.g-f-italic{
+    font-style: italic;
+}
+.g-f-centrado{
+    text-align: justify;
+  text-justify: inter-word;
+}
+.g-f-derecha{
+    text-align: end;
+}

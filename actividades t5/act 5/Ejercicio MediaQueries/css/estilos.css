@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Pequeños reseteos */
+h1,
+h3,
+h4,
+p {
+  margin: 0px;
+  padding: 0.5em;
+}
+body {
+  background-color: white;
+}
+
+/* Para cambir el color de leta de ciertos elementos */
+.verde {
+  color: #0c9b3b;
+}
+
+/* Contenedor general*/
+.container {
+  font-family: "Righteous", cursive;
+  margin: 20px auto;
+  width: 90%;
+}
+
+/* Parte del logo y menú */
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  display: none;
+}
+
+.menu_item {
+  padding: 0.1em;
+  /*display: none;*/
+  font-size: 0.75em;
+}
+
+/*Estilos parte principal*/
+main {
+  background-color: #666666;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main section {
+  width: 100%;
+}
+
+section.main_text {
+  color: white;
+  font-weight: bolder;
+  padding: 0.5em;
+}
+
+section.images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section.images img {
+  height: 100px;
+  width: 25%;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Para el caso de pantalla superior a 576px */
+@media (min-width: 576px){
+  .icon{
+    display: initial;
+    margin-right: 5px;
+  }
+  .menu_item{
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    font-size: 14pt;
+  }
+  .main_text{
+    float: left;
+    width: 50%;
+  }
+  .images{
+    float: right;
+    width: 50%;
+
+  }
+  section.images img {
+    
+    height: 100px;
+   width: 50%;
+  }
+ section.novedades{
+  width: 100%;
+  display: flex;
+  flex-direction: wrap;
+ }
+ .novedades h2{
+  display: block;
+  flex: 1;
+  width: 25%;
+ }
+ article{
+  flex: 1;
+  width: 25%;
+ }
+ 
+
+}
+
+/* Para el caso de pantalla superior a 992px */
+@media (min-width: 992px){
+  .main_text{
+    order: 2;
+    float: right;
+    width: 50%;
+  }
+  .images{
+    order: 1;
+    float: left;
+    width: 50%;
+
+
+  }
+  section.images img{
+    width: 33.3%;
+    height: 100px;
+  }
+  .hidden{
+    display: block;
+  }
+}

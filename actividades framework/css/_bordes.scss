@@ -1,0 +1,46 @@
+@mixin bordes($tamano){
+    border: #{$tamano}px solid;
+}
+@mixin sombra($tamano){
+    box-shadow: #{$tamano}px solid black;
+}
+
+
+@for $i from 1 to 41 {
+
+    .g-borde-#{$i} {
+      @include bordes($i)  ;
+    }
+    .g-borde-radius-#{$i} {
+        border-radius: #{$i}px ;
+    }
+     
+}
+@for $i from 1 to 20{
+    .g-sombra-{
+       @include sombra($i);
+    }
+}
+
+  .g-borde-verde{
+    border-color: greenyellow;
+}
+.g-borde-rojo{
+    border-color: red;
+}
+.g-borde-rosa{
+    border-color: rgb(250, 129, 250);
+}
+.g-borde-naranja{
+    border-color: orange;
+}
+.g-borde-azul{
+    border-color: rgb(168, 195, 235);
+}
+.g-borde-gris{
+    border-color: rgb(124, 124, 124);
+}
+.g-borde-azulon{
+    border-color: rgb(79, 245, 245);
+}
+
