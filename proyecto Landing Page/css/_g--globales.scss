@@ -54,7 +54,6 @@
 }
 //texto alineado
 
-<<<<<<< HEAD
 @mixin alineado($posicion){
     text-align: $posicion;
 }
@@ -68,7 +67,7 @@
 }
 .g--textLeft{
     @include alineado(left);
-=======
+}
  @mixin align($position){
     text-align: $position;
  }
@@ -80,7 +79,6 @@
 }
 .g--textLeft{
    @include align(left)
->>>>>>> ff23e98a88a6aca79712777d01985c1f81a2d035
 }
 
 .g--obligatorio{
