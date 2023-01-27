@@ -1,0 +1,39 @@
+@for $i from 1 to 13 {
+
+ .g--padding-#{$i} {
+    padding: #{$i*3}px;
+  }
+}
+@for $i from 1 to 13 {
+
+    .g--padding-top-#{$i} {
+       padding-top: #{$i*3}px;
+     }
+   }
+   @for $i from 1 to 13 {
+
+    .g--padding-bottom-#{$i} {
+       padding-bottom: #{$i*3}px;
+     }
+   }
+   @for $i from 1 to 13 {
+
+    .g--padding-left-#{$i} {
+       padding-left: #{$i*3}px;
+     }
+   }
+   @for $i from 1 to 13 {
+
+    .g--padding-right#{$i} {
+       padding-right: #{$i*3}px;
+     }
+   }
+
+
+
+
+
+
+
+
+
