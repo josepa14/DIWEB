@@ -6,7 +6,7 @@ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+small, strike, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -94,34 +94,6 @@ h2 {
   grid-template-areas: "izquierda derecha";
 }
 
-.c-padre__card {
-  grid-area: card;
-  box-shadow: 0 3px 5px rgb(241, 125, 16);
-  margin-left: 15%;
-  margin-right: 15%;
-  border-radius: 0.5em;
-  display: grid;
-  grid-template-areas: " izquierda  derecha ";
-  box-sizing: border-box;
-}
-.c-padre__card__imagen {
-  width: 100%;
-  height: 100%;
-  grid-area: izquierda;
-  border-radius: 0.5em;
-  box-sizing: border-box;
-}
-.c-padre__card__presentacion {
-  width: 100%;
-  height: 100%;
-  grid-area: derecha;
-  box-sizing: border-box;
-  padding-left: 10px;
-}
-.c-padre__card__presentacion p {
-  color: gray;
-}
-
 .c-padre__descripcion {
   grid-area: des;
   box-shadow: 0 3px 5px rgb(241, 125, 16);
@@ -184,6 +156,63 @@ h2 {
   border-radius: 10px;
 }
 
+.c-padre__card {
+  grid-area: card;
+  box-shadow: 0 3px 5px rgb(241, 125, 16);
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 0.5em;
+  display: grid;
+  grid-template-areas: "izquierda" "derecha";
+  box-sizing: border-box;
+}
+.c-padre__card__imagen {
+  width: 100%;
+  height: 100%;
+  grid-area: izquierda;
+  border-radius: 0.5em;
+  box-sizing: border-box;
+}
+.c-padre__card__presentacion {
+  width: 100%;
+  height: 100%;
+  grid-area: derecha;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+.c-padre__card__presentacion p {
+  color: gray;
+}
+
+@media screen and (min-width: 550px) {
+  .c-padre__card {
+    grid-area: card;
+    box-shadow: 0 3px 5px rgb(241, 125, 16);
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 0.5em;
+    display: grid;
+    grid-template-areas: " izquierda derecha ";
+    box-sizing: border-box;
+  }
+  .c-padre__card__imagen {
+    width: 100%;
+    height: 100%;
+    grid-area: izquierda;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+  }
+  .c-padre__card__presentacion {
+    width: 100%;
+    height: 100%;
+    grid-area: derecha;
+    box-sizing: border-box;
+    padding-left: 10px;
+  }
+  .c-padre__card__presentacion p {
+    color: gray;
+  }
+}
 .c-imagen {
   width: 100%;
   height: 100%;
@@ -253,6 +282,18 @@ h2 {
 
 .g--padding-left-8 {
   padding-left: 8%;
+}
+
+.g--textCenter {
+  text-align: center;
+}
+
+.g--textRight {
+  text-align: right;
+}
+
+.g--textLeft {
+  text-align: left;
 }
 
 .g--textCenter {

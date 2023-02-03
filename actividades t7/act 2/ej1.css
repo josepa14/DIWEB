@@ -1,0 +1,118 @@
+.container{
+    position: relative;
+}
+.caja{
+  width: 180px;
+  height: 180px;
+  background-color: #30B037;
+  color: #FFF;
+  text-align: center;
+  line-height: 180px;
+  margin: 15px;
+  float: left;
+  font-size: 18px;
+  font-family: Arial;
+  
+}
+.caja1:hover{
+  background-color: red;
+  transition-duration: 500ms;
+  transition-property: background-color;
+  transition-timing-function: linear;
+
+}
+.caja2{
+  background-color: purple;
+}
+.caja2:hover{
+  font-size: 30px;
+  transition-duration: 500ms;
+  transition-property: font-size;
+  transition-timing-function: linear;
+
+}
+.caja3{
+  background-color: blue;
+}
+.caja3:hover{
+  color: black;
+  transition-duration: 500ms;
+  transition-property: color;
+  transition-timing-function: linear;
+
+}
+.caja4{
+  background-color: aqua;
+}
+.caja4:hover{
+  line-height: 3em;
+  transition-duration: 500ms;
+  transition-property: line-height;
+  transition-timing-function: linear;
+
+}
+.caja5{
+  background-color: chartreuse;
+}
+.caja5:hover{
+  border-radius: 35px;
+  transition-duration: 500ms;
+  transition-property: border-radius;
+  transition-timing-function: linear;
+
+}
+.caja6{
+  background-color: rgb(255, 217, 0);
+}
+.caja6:hover{
+  
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  transition-duration: 500ms;
+  transition-property: box-shadow;
+  transition-timing-function: linear;
+
+}
+.caja7{
+  background-color: orange;
+}
+.caja7:hover{
+  
+ opacity: 50%;
+  transition-duration: 500ms;
+  transition-property: opacity;
+  transition-timing-function: linear;
+
+}
+.caja8{
+  background-color: gray;
+}
+.caja8:hover{
+  
+ border: 4px solid black;
+  transition-duration: 500ms;
+  transition-property: border;
+  transition-timing-function: linear;
+
+}
+.caja9{
+  background-color: black;
+}
+.caja9:hover{
+  
+  margin: 4px;
+  transition-duration: 500ms;
+  transition-property: margin;
+  transition-timing-function: linear;
+
+}
+.caja10{
+  background-color: rgb(16, 2, 56);
+}
+.caja10:hover{
+  
+  padding: 14px;
+  transition-duration: 500ms;
+  transition-property: padding;
+  transition-timing-function: linear;
+
+}

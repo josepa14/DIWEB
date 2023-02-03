@@ -16,32 +16,37 @@
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <div class="container">
-            <blockquote class="blockquote bg-info">
+        <div class="container row">
+          <div class="col-md-4">
+            <img src="img.png" class="figure-img img-fluid rounded" alt="" width="150px">
+            <blockquote class="blockquote bg-info p-4">
                 <p>Cumplimentar el formulario de registro  para poder disponer de todos los servicios  de la web</p>
                 <footer class="blockquote-footer">Web de Servicios</footer>
             </blockquote>
-            <form>
+          </div>
+          <div class="col-md-7">
+            <h1 class="text-center">Formulario de registro</h1>
+            <form class="border border-primary p-4">
                 <div class="row mb-3">
-                  <label for="inputEmail3" class="col-sm-2 col-form-label">Usuario</label>
+                  <label for="inputEmail3" class="col-md-2 col-form-label">Usuario</label>
                   <div class="col-sm-10">
                     <input type="email" class="form-control" id="inputuser" placeholder="usuario">
                   </div>
                 </div>
                 <div class="row mb-3">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                    <label for="inputEmail3" class="col-md-2 col-form-label">Email</label>
                     <div class="col-sm-10">
                       <input type="email" class="form-control" id="inputEmail3" placeholder="email">
                     </div>
                   </div>
                 <div class="row mb-3">
-                  <label for="inputPassword3" class="col-sm-2 col-form-label">Contraseña</label>
+                  <label for="inputPassword3" class="col-md-2 col-form-label">Contraseña</label>
                   <div class="col-sm-10">
                     <input type="Contraseña" class="form-control" id="inputPassword3" placeholder="contraseña">
                   </div>
                 </div>
                 <fieldset class="row mb-3">
-                  <legend class="col-form-label col-sm-2 pt-0">Sexo</legend>
+                  <legend class="col-form-label col-md-2 pt-0">Sexo</legend>
                   <div class="col-sm-10">
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
@@ -54,15 +59,17 @@
                       
                       
                   </div>
-                  <div class="bg-dark">
+                  <div class="bg-dark p-2 mt-2">
                     <label for="exampleDataList" class="form-label text-light">Seleccionar foto de perfil:</label>
                     <label for="formFileLg" class="form-label"></label>
                     <input class="form-control form-control-plaintext bg-dark text-light" id="formFileLg" type="file">
                   </div>
+                 
                 </fieldset>
+                 <button type="submit" class="btn btn-primary">Registrar</button>
                 
-                <button type="submit" class="btn btn-primary">Registrar</button>
               </form>
+              </div>
         </div>
     </body>
 </html>
